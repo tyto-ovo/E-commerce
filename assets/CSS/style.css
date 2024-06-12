@@ -1,0 +1,35 @@
+body {
+  background-color: #fff8f0;
+  color: #392f5a;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.grid-boxes {
+  border: 4px #ff8811 solid;
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "menu productos productos productos"
+    "menu productos productos productos"
+    "footer footer footer footer";
+  min-height: 100vh;
+  grid-template-columns: 1fr 3fr 3fr 3fr;
+  grid-template-rows: auto auto 1fr;
+}
+.grid-box {
+  border: 2px #ff8811 solid;
+}
+.navbar {
+  grid-area: navbar;
+}
+.menu {
+  grid-area: menu;
+}
+.productos {
+  grid-area: productos;
+}
+.footer {
+  grid-area: footer;
+}
